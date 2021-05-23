@@ -1,0 +1,27 @@
+.empty-box img {
+  height: 15rem;
+}
+
+.empty-box h1 {
+  margin-top: -4rem;
+}
+
+.empty-box p {
+  font-size: 120%;
+  color: darkgray;
+}
+
+.create-note {
+  margin-top: 2rem;
+}
+
+.create-note img {
+  width: 3rem;
+  position: relative;
+  left: 4rem;
+}
+
+.create-note .text {
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=empty-box.component.css.map */

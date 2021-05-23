@@ -1,0 +1,80 @@
+.note-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+
+    button{
+
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translate(-50%);
+            border: none;
+            outline: none;
+            background-color: #51c4d3;
+            color: #fff;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 10px rgb(105, 105, 105), -2px -2px 10px rgb(105, 105, 105);
+            animation: fade-in linear 500ms forwards;
+    }
+
+    .single-note{
+        background-image: linear-gradient(to bottom, #51C4D3, #2A9FB9);
+        width: 15rem;
+        height: 16rem;
+        position: relative;
+        border-radius: 20px;
+        color: #fff;
+        cursor: pointer;
+    
+        .dust-bin{
+            font-size: 1.5em;
+            text-align: right;
+            padding-top: 0.5rem;
+        }
+    
+        .heading{
+            position: absolute;
+            top: 40%;
+            font-size: 2rem;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .note-list{
+        grid-template-columns: repeat(1, 1fr);
+        .single-note{
+            width: 100%;
+            height: 10rem;
+        }
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .note-list{
+        grid-template-columns: repeat(2, 1fr);
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 991px) and (max-width: 1200px) {
+    .note-list{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}

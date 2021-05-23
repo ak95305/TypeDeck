@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,OAAO,EAAE,SAAS;CAgBrB;;AAjBD,AAGI,aAHS,CAGT,KAAK,EAHT,aAAa,CAGF,QAAQ,CAAA;EACX,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACd;;AAPL,AASI,aATS,CAST,MAAM,CAAA;EACF,aAAa,EAAE,iBAAiB;EAChC,SAAS,EAAE,KAAK;CACnB;;AAZL,AAaI,aAbS,CAaT,YAAY,CAAA;EACR,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "new-note.component.scss"
+    ],
+    "names": [],
+    "file": "new-note.component.css"
+}

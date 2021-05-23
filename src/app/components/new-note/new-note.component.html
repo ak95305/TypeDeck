@@ -1,0 +1,13 @@
+<div class="input-fields container-fluid">
+    <input class="d-block" type="text" name="title" id="title" placeholder="Title.." #title  value="{{oldTitle}}">
+    <textarea class="d-block" type="text" name="discription" rows="10" id="discription" placeholder="Note...." #description value="{{this.oldDescription}}"></textarea>
+    
+    <div class="buttons">
+        <button class="save-btn" [routerLink]='["/notes"]' (click)="onSave(title, description)">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="cross-btn" [routerLink]='["/notes"]'>
+            <i class="fa fa-times"></i>
+          </button>
+    </div>
+</div>

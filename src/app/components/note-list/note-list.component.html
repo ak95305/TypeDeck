@@ -1,0 +1,17 @@
+<div class="note-list container mt-5">
+  <div (click)="onSelect(note)" *ngFor="let note of notes" [note] = "note" [routerLink]="['/new-note/:id']">
+    <div class="p-3 single-note">
+      <div class="dust-bin" (click)="onDelete(note)">
+        <i class="fa fa-trash"></i>
+      </div>
+      <div class="one-note">
+        <div class="heading">
+          {{ note.title }}
+        </div>
+      </div>
+    </div>  
+  </div>
+  <button [routerLink]='["/new-note"]'>
+    <i class="fa fa-plus"></i>
+  </button>
+</div>

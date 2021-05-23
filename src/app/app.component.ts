@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Note } from './note.model';
+import { NoteService } from './note.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'typedeck';
+  notes: Note[];
+  constructor(private router: Router, 
+    private noteService: NoteService){
+    this.notes = noteService.notes;
+  }
+
+  isEmpty(){
+    if(this.notes.length === 0){
+      return true;
+    } else{
+      return false;
+    }
+  }
 }

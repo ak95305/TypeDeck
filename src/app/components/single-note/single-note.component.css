@@ -1,0 +1,22 @@
+.single-note {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#51C4D3), to(#2A9FB9));
+  background-image: linear-gradient(to bottom, #51C4D3, #2A9FB9);
+  width: 15rem;
+  height: 16rem;
+  position: relative;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.single-note .dust-bin {
+  font-size: 1.5em;
+  text-align: right;
+  padding-top: 0.5rem;
+}
+
+.single-note .heading {
+  position: absolute;
+  top: 40%;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=single-note.component.css.map */

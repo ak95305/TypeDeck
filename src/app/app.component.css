@@ -1,0 +1,160 @@
+@import url("./../../node_modules/font-awesome/css/font-awesome.css");
+header {
+  padding: 3rem 3rem 1rem;
+}
+
+header img {
+  width: 10rem;
+}
+
+header .col i {
+  font-size: 2.65rem;
+  color: #51c4d3;
+}
+
+button {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: none;
+  outline: none;
+  background-color: #51c4d3;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 10px dimgray, -2px -2px 10px dimgray;
+          box-shadow: 2px 2px 10px dimgray, -2px -2px 10px dimgray;
+  -webkit-animation: fade-in linear 500ms forwards;
+          animation: fade-in linear 500ms forwards;
+}
+
+.fade-in {
+  -webkit-animation: fade-in linear 500ms forwards;
+          animation: fade-in linear 500ms forwards;
+}
+
+.save-btn {
+  background-color: #89C541;
+  -webkit-animation: save-center 500ms linear forwards;
+          animation: save-center 500ms linear forwards;
+}
+
+.cross-btn {
+  -webkit-animation: cross-center 500ms linear forwards;
+          animation: cross-center 500ms linear forwards;
+  background-color: #f35656;
+}
+
+.save-btn-ani {
+  -webkit-animation: save-right 500ms linear forwards;
+          animation: save-right 500ms linear forwards;
+}
+
+.cross-btn-ani {
+  -webkit-animation: cross-left 500ms linear forwards;
+          animation: cross-left 500ms linear forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes save-right {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 55%;
+  }
+}
+
+@keyframes save-right {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 55%;
+  }
+}
+
+@-webkit-keyframes cross-left {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 45%;
+  }
+}
+
+@keyframes cross-left {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 45%;
+  }
+}
+
+@-webkit-keyframes save-center {
+  from {
+    left: 55%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes save-center {
+  from {
+    left: 55%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@-webkit-keyframes cross-center {
+  from {
+    left: 45%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes cross-center {
+  from {
+    left: 45%;
+  }
+  to {
+    left: 50%;
+  }
+}
+/*# sourceMappingURL=app.component.css.map */
